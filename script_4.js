@@ -51,11 +51,18 @@ console.log("Quel age aurait chaque inventeur aujourd'hui ?");
 console.log("-----------------------------");
 
 
-console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille. ?");
+console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille. (version avec nouvel array?");
   arrayLastName = []  
   entrepreneurs.forEach(entrepreneurs_content => {
     arrayLastName.push(entrepreneurs_content.last)
   })
   console.log(arrayLastName.sort());
+
+console.log("-----------------------------");
+
+console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille. (version avec .sort?");
+
+  const resultb4 = entrepreneurs.sort((a,b)=> (a.last>b.last)*2-1);
+  console.log(resultb4);
 
 console.log("-----------------------------");
