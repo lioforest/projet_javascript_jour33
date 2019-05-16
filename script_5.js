@@ -62,21 +62,21 @@ console.log("Quel est livre le moins emprunté ?");
 console.log("-----------------------------");
 
 console.log("Trouve le livre avec l'ID: 873495"); 
-  const result1 = books.find(books => books.id === 873495);
-  console.log(result1);
+  const resultb1 = books.find(books => books.id === 873495);
+  console.log(resultb1);
 console.log("-----------------------------");
 
 console.log("Supprime le livre avec l'ID: 133712 "); 
-  const result2 = books.findIndex(books => books.id === 133712);
-  books.splice(result2,1)
+  const resultb2 = books.findIndex(books => books.id === 133712);
+  books.splice(resultb2,1)
   console.log(books);
 
 
 console.log("-----------------------------");
 
 console.log("Trie les livres par ordre alphabétique.");
-  const result3 = books.sort((a,b)=> (a.title>b.title)*2-1);
-  console.log(result3);
+  const resultb3 = books.sort((a,b)=> (a.title>b.title)*2-1);
+  console.log(resultb3);
 
 
 
